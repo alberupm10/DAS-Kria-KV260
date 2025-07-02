@@ -1,0 +1,35 @@
+{
+  "name": "host_vdfd",
+  "type": "HOST",
+  "platform": "/home/alberto/TFG-KRIA-KV260/vitis/platform/export/platform/platform.xpfm",
+  "domain": "linux_psu_cortexa53",
+  "cpuInstance": "cortex-a53",
+  "cpuType": "cortex-a53",
+  "os": "linux",
+  "sysroot": "/home/alberto/TFG-KRIA-KV260/env/sysroots/cortexa72-cortexa53-xilinx-linux",
+  "configuration": {
+    "componentType": "HOST",
+    "hostToolchainConfigurations": [
+      {
+        "configId": "default",
+        "compilerSymbols": [],
+        "compilerIncludes": [],
+        "compilerOptions": [],
+        "linkerLibraries": [],
+        "linkerLibraryPaths": [],
+        "linkerOptions": [],
+        "x86CompilerSymbols": [],
+        "x86CompilerIncludes": [],
+        "x86CompilerOptions": [],
+        "x86LinkerLibraries": [],
+        "x86LinkerLibraryPaths": [],
+        "x86LinkerOptions": []
+      }
+    ]
+  },
+  "domainRealName": "linux_psu_cortexa53",
+  "applicationFlow": "EMBEDDED_ACCEL",
+  "previousBuildStatusMap": {
+    "hw": "SUCCESS"
+  }
+}

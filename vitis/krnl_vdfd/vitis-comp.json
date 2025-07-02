@@ -1,0 +1,12 @@
+{
+  "name": "krnl_vdfd",
+  "type": "HLS",
+  "configuration": {
+    "componentType": "HLS",
+    "configFiles": [
+      "hls_config.cfg"
+    ],
+    "work_dir": "krnl_vdfd"
+  },
+  "previousBuildStatusMap": {}
+}

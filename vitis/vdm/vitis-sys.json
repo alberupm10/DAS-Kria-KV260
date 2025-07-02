@@ -1,0 +1,81 @@
+{
+  "modelVersion": "1.0",
+  "projectName": "vdm",
+  "platform": "/home/alberto/TFG-KRIA-KV260/vitis/platform/export/platform/platform.xpfm",
+  "externalComponentRefs": [
+    "krnl_vdm",
+    "host_vdm"
+  ],
+  "components": [
+    {
+      "name": "package",
+      "type": "PACKAGE",
+      "configuration": {
+        "componentType": "PACKAGE",
+        "packageConfigurations": [
+          {
+            "configId": "package.default",
+            "options": []
+          }
+        ],
+        "configFiles": [
+          "package/package.cfg"
+        ]
+      },
+      "previousBuildStatusMap": {}
+    },
+    {
+      "name": "hw_link",
+      "type": "HW_LINKER",
+      "configuration": {
+        "componentType": "HW_LINKER",
+        "containers": [
+          {
+            "name": "krnl_vdm",
+            "kernels": {
+              "krnl_vdm": "krnl_vdm"
+            },
+            "userXoKernels": {},
+            "aieComponents": [],
+            "userAieLibadfList": [],
+            "cfgFiles": [
+              "hw_link/krnl_vdm-link.cfg"
+            ]
+          }
+        ],
+        "vppLinkerConfigurations": [
+          {
+            "configId": "hw_link.default",
+            "options": [],
+            "containerOptions": {},
+            "buildDatafiles": []
+          }
+        ]
+      },
+      "previousBuildStatusMap": {}
+    }
+  ],
+  "buildConfigurations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "supportedTargets": [
+        "SW_EMU",
+        "HW"
+      ],
+      "componentConfigMap": {
+        "package": "package.default",
+        "hw_link": "hw_link.default"
+      }
+    }
+  ],
+  "activeBuildConfigId": "default",
+  "hostMode": "x86",
+  "previousBuildStatusMap": {
+    "sw_emu": "NEW",
+    "hw_emu": "NEW",
+    "hw": "SUCCESS"
+  },
+  "isDirty": true,
+  "applicationFlow": "EMBEDDED_ACCEL"
+}

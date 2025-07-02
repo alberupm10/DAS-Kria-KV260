@@ -1,0 +1,21 @@
+****ASOCIAR XSA AL PROYECTO PETALINUX******
+petalinux-config --get-hw-description=<directorio del xsa>
+****************************************************************
+
+****COMPILAR PROYECTO****
+petalinux-build
+*************************
+
+****GENERAR SDK PARA SYSROOT Y CROSS-COMPILING******
+petalinux-build --sdk
+**************************************************
+
+****GENERAR IMAGEN .WIC ***************************************************************
+petalinux-package --wic --bootfiles " ramdisk.cpio.gz.u-boot boot.scr Image system.dtb"
+***************************************************************************************
+
+****GRABAR IMAGEN .WIC EN TARJETA SD**********************************
+sudo dd if=petalinux-sdimage.wic of=/dev/<> status=progress conv=fsync
+**********************************************************************
+
+Al iniciar te pide el usuario que es petalinux y te obliga a crear una contraseña

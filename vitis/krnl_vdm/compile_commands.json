@@ -1,0 +1,18 @@
+[
+  {
+    "directory": "/home/alberto/TFG-KRIA-KV260/vitis_entrega/krnl_vdm",
+    "arguments": [
+      "/tools/Xilinx/Vitis_HLS/2023.2/tps/lnx64/gcc-8.3.0/bin/g++",
+      "-I/home/alberto/.Xilinx/Vitis/2023.2/vitis_libraries/dsp/L1/include/hw/vitis_fft/fixed",
+      "-I/common",
+      "-isystem/tools/Xilinx/Vitis_HLS/2023.2/include",
+      "-isystem/tools/Xilinx/Vitis_HLS/2023.2/include/etc",
+      "-isystem/tools/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+      "-isystem/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+      "-isystem/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include",
+      "--compile",
+      "/home/alberto/TFG-KRIA-KV260/vitis_entrega/krnl_vdm/krnl_vdm.cpp"
+    ],
+    "file": "/home/alberto/TFG-KRIA-KV260/vitis_entrega/krnl_vdm/krnl_vdm.cpp"
+  }
+]

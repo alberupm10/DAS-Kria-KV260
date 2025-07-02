@@ -1,0 +1,14 @@
+{
+  "clangd.fallbackFlags": [
+    "-I/home/alberto/.Xilinx/Vitis/2023.2/vitis_libraries/dsp/L1/include/hw/vitis_fft/fixed",
+    "-I/common",
+    "-I/tools/Xilinx/Vitis_HLS/2023.2/include",
+    "-I/tools/Xilinx/Vitis_HLS/2023.2/include/etc",
+    "-I/tools/Xilinx/Vitis_HLS/2023.2/include/ap_sysc",
+    "-I/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/auto_cc/include",
+    "-I/tools/Xilinx/Vitis_HLS/2023.2/lnx64/tools/systemc/include"
+],
+  "vitis.software.repositories": [
+    "/home/alberto/TFG-KRIA-KV260/vitis"
+  ]
+}
